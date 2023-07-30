@@ -1,4 +1,8 @@
 # Dynamic Cascade Dropdown
+For `@OneToMany` with `@JoinColumn` , the join column needs to go to the Table referring to `Many` (i.e, State / City ) because this will allow one country to have many states and one state to have many cities.
+
+---
+
 ```java
 public class Country {
     @Id

@@ -25,7 +25,7 @@ public class Country {
     /*
      * This is going to create an extra column called 'country_id_fk' in State Table.
      * 'country_id_fk' is a Foreign Key in State Table.
-     * By Default, JoinColumn will create an additional column in 'the Many' Side.
+     * By Default, in case of @OneToMany, JoinColumn will create an additional column in 'the Many' Side.
      * */
     @OneToMany
     @JoinColumn(name = "country_id_fk")

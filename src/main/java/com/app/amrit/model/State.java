@@ -25,7 +25,7 @@ public class State {
     /*
     * This is going to create an extra column called 'state_id_fk' in City Table.
     * 'state_id_fk' is a Foreign Key in City Table.
-    * By Default, JoinColumn will create an additional column in 'the Many' Side.
+    * By Default,in case of @OneToMany, JoinColumn will create an additional column in 'the Many' Side.
     * */
     @OneToMany
     @JoinColumn(name = "state_id_fk")
